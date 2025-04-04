@@ -1,151 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Travel</title>
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:image" content="" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-    </head>
-    <body>
-        <div class="wrapper">
-            <header>
-                <div class="left">
-                    <h1>
-                        <a href="#"
-                            ><img src="images/logo.svg" alt="Image"
-                        /></a>
-                    </h1>
-                </div>
-                <div class="right">
-                    <div class="search">
-                        <img src="images/search.svg" alt="Image" />
-                        <input type="search" placeholder="Search.." />
-                    </div>
-                </div>
-            </header>
-            <div class="head">
-                <h2>Welcome John Doe</h2>
-                <p>Explore the world around you</p>
-                <ul>
-                    <li class="first">
-                        <img class="first" src="images/All.svg" alt="Image" />
-                        <span>All</span>
-                    </li>
-                    <li>
-                        <img
-                            class="rest"
-                            src="images/mountains.jpg"
-                            alt="Image"
-                        />
-                        <span>Mountains</span>
-                    </li>
-                    <li>
-                        <img class="rest" src="images/city.jpg" alt="Image" />
-                        <span>City</span>
-                    </li>
-                    <li>
-                        <img class="rest" src="images/beach.jpg" alt="Image" />
-                        <span>Beach</span>
-                    </li>
-                    <li>
-                        <img class="rest" src="images/park.jpg" alt="Image" />
-                        <span>Amusement Park</span>
-                    </li>
-                    <li>
-                        <img
-                            class="rest"
-                            src="images/monumental.jpg"
-                            alt="Image"
-                        />
-                        <span>Monumental</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="items">
-                <div class="item">
-                    <div class="top">
-                        <img src="images/rainbow.jpg" alt="Image" />
-                    </div>
-                    <div class="middle"><h3>Rainbow Mountain</h3></div>
-                    <div class="bottom">
-                        <img src="images/place.svg" alt="Image" />
-                        <span>Peru</span>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="top">
-                        <img src="images/store.jpg" alt="Image" />
-                    </div>
-                    <div class="middle"><h3>Store Lenan</h3></div>
-                    <div class="bottom">
-                        <img src="images/place.svg" alt="Image" />
-                        <span>Norway</span>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="top">
-                        <img src="images/himalaya.jpg" alt="Image" />
-                    </div>
-                    <div class="middle"><h3>Himalaya</h3></div>
-                    <div class="bottom">
-                        <img src="images/place.svg" alt="Image" />
-                        <span>India</span>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="top">
-                        <img src="images/scafel.jpg" alt="Image" />
-                    </div>
-                    <div class="middle"><h3>Scafell Pike</h3></div>
-                    <div class="bottom">
-                        <img src="images/place.svg" alt="Image" />
-                        <span>England</span>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="top">
-                        <img src="images/rainbow.jpg" alt="Image" />
-                    </div>
-                    <div class="middle"><h3>Rainbow Mountain</h3></div>
-                    <div class="bottom">
-                        <img src="images/place.svg" alt="Image" />
-                        <span>Peru</span>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="top">
-                        <img src="images/store.jpg" alt="Image" />
-                    </div>
-                    <div class="middle"><h3>Store Lenan</h3></div>
-                    <div class="bottom">
-                        <img src="images/place.svg" alt="Image" />
-                        <span>Norway</span>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="top">
-                        <img src="images/himalaya.jpg" alt="Image" />
-                    </div>
-                    <div class="middle"><h3>Himalaya</h3></div>
-                    <div class="bottom">
-                        <img src="images/place.svg" alt="Image" />
-                        <span>India</span>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="top">
-                        <img src="images/scafel.jpg" alt="Image" />
-                    </div>
-                    <div class="middle"><h3>Scafell Pike</h3></div>
-                    <div class="bottom">
-                        <img src="images/place.svg" alt="Image" />
-                        <span>England</span>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <header>
+        <div class="left">
+          <h1>
+            <a href="/"><img src="images/logo.svg" alt="Image" /></a>
+          </h1>
         </div>
-    </body>
+        <div class="right">
+          <button class="button" id="install-button">Install</button>
+          <form>
+            <img src="images/search.svg" alt="Image" />
+            <input type="search" placeholder="Search.." />
+          </form>
+        </div>
+      </header>
+      <div class="head">
+        <h2>Welcome John Doe</h2>
+        <p>Explore the world around you</p>
+        <ul></ul>
+      </div>
+      <div class="items"></div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script ="sw">
+      const STATIC_CACHE = "static-v4";
+      const DYNAMIC_CACHE = "dynamic-v4";
+
+      self.addEventListener("install", function (event) {
+        console.log("Installed", event);
+        event.waitUntil(
+          caches.open(STATIC_CACHE).then((cache) => {
+            cache.addAll([
+              "/",
+              "/index.html",
+              "/manifest.json",
+
+              "/js/script.js",
+              "/js/jquery-3.5.1.min.js",
+
+              "/css/style.css",
+
+              "/images/logo.svg",
+              "/images/search.svg",
+
+              "/fonts/product_sans_bold-webfont.woff2",
+              "/fonts/product_sans_bold-webfont.woff",
+              "/fonts/product_sans_regular-webfont.woff2",
+              "/fonts/product_sans_regular-webfont.woff",
+
+              "https://traveller.talrop.works/api/v1/places/",
+              "https://traveller.talrop.works/api/v1/places/categories/",
+            ]);
+          })
+        );
+      });
+
+      self.addEventListener("activate", function (event) {
+        console.log("Activated", event);
+        event.waitUntil(
+          caches.keys().then((keyList) => {
+            return Promise.all(
+              keyList.map((key) => {
+                if (key !== STATIC_CACHE && key !== DYNAMIC_CACHE) {
+                  console.log(key);
+                  return caches.delete(key);
+                }
+              })
+            );
+          })
+        );
+        return self.clients.claim();
+      });
+
+      self.addEventListener("fetch", function (event) {
+        event.respondWith(
+          caches.match(event.request).then((response) => {
+            if (response) {
+              return response;
+            } else {
+              return fetch(event.request).then((res) => {
+                return caches.open(DYNAMIC_CACHE).then((cache) => {
+                  cache.put(event.request.url, res.clone());
+                  return res;
+                });
+              });
+            }
+          })
+        );
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          url: "https://traveller.talrop.works/api/v1/places/categories/",
+          success: function (response) {
+            let categories = response.data;
+            let categories_html = "";
+            categories.forEach((category) => {
+              categories_html += `<li>
+                <a href="#">
+                    <img
+                        class="rest"
+                        src="${category.image}"
+                        alt="${category.name}"
+                    />
+                    <span>${category.name}</span>
+                </a>
+            </li>`;
+            });
+
+            $("div.head ul").append(categories_html);
+          },
+        });
+        $.ajax({
+          url: "https://traveller.talrop.works/api/v1/places/",
+          success: function (response) {
+            let places = response.data;
+            let places_html = "";
+            places.forEach((place) => {
+              places_html += `<div class="item">
+                <a href="detail.html?id=${place.id}">
+                    <div class="top">
+                        <img src="${place.image}" alt="${place.name}" />
+                    </div>
+                    <div class="middle"><h3>${place.name}</h3></div>
+                    <div class="bottom">
+                        <img src="images/place.svg" alt="Image" />
+                        <span>${place.location}</span>
+                    </div>
+                </a>
+            </div>`;
+            });
+
+            $("div.items").append(places_html);
+          },
+        });
+      });
+
+      var askPrompt;
+
+      var button = document.getElementById("install-button");
+
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then(function () {
+          console.log("Service worker registered!");
+        });
+      }
+
+      const installApp = () => {
+        if (askPrompt) {
+          askPrompt.prompt();
+          askPrompt.userChoice.then((result) => {
+            console.log(result.outcome);
+            if (result.outcome === "dismissed") {
+              console.log("User dismissed");
+            } else {
+              console.log("installed");
+            }
+
+            askPrompt = null;
+          });
+        }
+      };
+
+      button.addEventListener("click", installApp);
+
+      window.addEventListener("beforeinstallprompt", (event) => {
+        console.log("before install prompt triggered");
+        askPrompt = event;
+        event.preventDefault();
+        button.style.display = "block";
+      });
+    </script>
+  </body>
 </html>
